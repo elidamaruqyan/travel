@@ -1,0 +1,28 @@
+/***** Open Graph protocol ****/
+https://ogp.me/
+https://css-tricks.com/essential-meta-tags-social-media/
+
+
+/***** Favicon ****/
+https://favicon.io/
+
+
+/***** Font Awasome ****/
+https://fontawesome.com/kits
+
+
+/***** Normalize.css ******/
+https://necolas.github.io/normalize.css/
+
+
+/***** Reset.css ******/
+https://gist.github.com/DavidWells/18e73022e723037a50d6
+
+
+/*****  Google Fonts *****/
+https://fonts.google.com/
+
+
+/***** Video urls ******/
+https://travelproductions.film/wp-content/uploads/2020/05/Travel-Productions-Showreel-2020-720p.mp4
+

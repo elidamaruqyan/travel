@@ -1,0 +1,87 @@
+/* GENERAL RULES */
+:root {
+    /*********** Color Variables *************************/
+    --clr-ntrl-min: rgba(255, 255, 255, 1);
+    --clr-ntrl-max: rgba(0, 0, 0, 1);
+    --main-brand-color: rgba(76, 103, 65, 1);
+
+    /**************** Gap and Duration Variables **********************/
+    --duration: 8s;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+
+    /****************** Z-Index Variables ******************/
+    --zIndex--1: -1;
+    --zIndex-1: 9;
+    --zIndex-2: 99;
+    --zIndex-3: 999;
+    --zIndex-4: 9999;
+    --zIndex-5: 99999;
+
+    /************ Typography Variables ******************/
+
+    --type-micro: 0.625rem; /* 10px */
+    --type-smallest: 0.75rem; /* 12px */
+    --type-smaller: 0.875rem; /* 14px */
+    --type-small: 1rem; /* 16px */
+    --type-base: 1.25rem; /* 20px */
+    --type-large: 1.5625rem; /* 25px */
+    --type-large-responsive: 1.875rem; /* 35px */
+    --type-larger: 3.125rem; /* 50px */
+    --type-largest: 4.375rem; /* 70px */
+    --type-jumbo: 7.5rem; /* 90px */
+
+    --type-light: 300;
+    --type-regular: 400;
+    --type-medium: 500;
+    --type-semi-bold: 600;
+    --type-bold: 700;
+    --type-extra-bold: 900;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background: var(--main-brand-color);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-brand-color);
+    border-radius: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--clr-ntrl-max);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+a {
+    color: var(--clr-ntrl-min);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex-container {
+    display: flex;
+    place-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

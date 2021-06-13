@@ -1,0 +1,177 @@
+/*!********* Hero Are Start ***************!*/
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-ntrl-min);
+}
+
+.banner {
+    flex: 0 0 26%;
+    color: var(--clr-ntrl-min);
+}
+
+.banner-message-wrapper {
+    position: absolute;
+    top: 28%;
+    left: 9%;
+    z-index: var(--zIndex-1);
+    max-width: 100%;
+}
+
+.banner-message-wrapper__title {
+    margin-bottom: 30px;
+    font-size: var(--type-jumbo);
+    font-weight: var(--type-bold);
+    color: var(--main-brand-color);
+}
+
+.banner-message-wrapper__title span {
+    font-style: italic;
+    color: var(--clr-ntrl-min);
+}
+
+.banner-message-wrapper__paragraph {
+    max-width: 324px;
+    color: var(--clr-ntrl-max);
+    font-size: var(--type-large-responsive);
+}
+
+.video-wrapper {
+    flex: auto;
+    clip-path: circle(80% at 68% 36%);
+}
+
+.elementor-video {
+    min-width: 100%;
+    min-height: 98vh;
+}
+
+/*!********* Hero Are End ***************!*/
+
+
+/*!********* Search Destination Area Start ***************!*/
+.search-destination {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 14px;
+    background: var(--main-brand-color);
+    transform: translateY(-90%);
+}
+
+.search-wrapper {
+    grid-gap: 34px;
+}
+
+.search-wrapper-legend {
+    padding: 16px;
+    font: italic small-caps bold 35px/30px "Open Sans", serif;
+    color: var(--clr-ntrl-max);
+    background: var(--clr-ntrl-min);
+    box-shadow: 1px 2px 5px var(--clr-ntrl-max);
+    transform: translate(-140px, -42px);
+}
+
+/*!********* Search Destination Area End ***************!*/
+
+/*!********* Popular Destination Area Start ***************!*/
+.popular-destination {
+    padding: 50px 0;
+}
+
+.card-row {
+    display: flex;
+    grid-gap: 24px;
+}
+
+.card-content {
+    transform: translateY(110%);
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.card-content__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.card-content__paragraph {
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+    padding: 25px 0;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+    color: var(--clr-ntrl-min);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+    0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1),
+    0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+}
+
+.card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.99) 100%);
+    transform: translateY(-50%);
+}
+
+.card--first::before {
+    background-image: url("../../assets/images/mountain.jpg");
+}
+
+.card--second::before {
+    background-image: url("../../assets/images/mountain1.jpg");
+}
+
+.card-third::before {
+    background-image: url("../../assets/images/canyons.jpg");
+}
+
+.card-last::before {
+    background-image: url("../../assets/images/beaches.jpg");
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+
+.card:hover::before {
+    transform: translateY(-20px);
+}
+
+/*!********* Popular Destination Area End ***************!*/

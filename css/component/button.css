@@ -1,0 +1,41 @@
+.btn {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid #f7f7f7;
+    font-size: var(--type-small);
+    font-weight: var(--type-semi-bold);
+    text-align: center;
+    color: var(--clr-ntrl-min);
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1000ms;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    z-index: var(--zIndex--1);
+    width: 0;
+    height: 120%;
+    background: #f7f7f7;
+    transform: skewX(15deg);
+    transition: 0.3s;
+}
+
+.btn:hover::after {
+    left: -10%;
+    width: 120%;
+}
+
+.btn:hover {
+    color: var(--main-brand-color);
+}
+
+
+
