@@ -1,6 +1,14 @@
 # Travel Agency 
 
 <h4> Main resources and additional links </h4>
+<div> 
+  <h2>  HTML/CSS style guides </h2>
+  <ul>
+    <li> <a href="https://en.bem.info/"> BEM  </a> </li>
+    <li> <a href="http://codeguide.academy/html-css.html"> HTML Academy styleguide </a> </li>
+  </ul>
+</div>
+<br>
 
 <div> 
   <h2>  Open Graph protocol </h2>
